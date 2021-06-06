@@ -18,7 +18,9 @@
 
 background: rgb(252,133,0);
 background: linear-gradient(266deg, rgba(252,133,0,1) 15%, rgba(204,204,204,1) 100%);}
-      .card-body{
+      .card-body{ background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
            .logo-image{
     width: 46px;
@@ -35,11 +37,7 @@ background: linear-gradient(266deg, rgba(252,133,0,1) 15%, rgba(204,204,204,1) 1
       }
       
       .col{
-      transition: 0.2s ease;
-        background: #00C9FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      }
+        transition: 0.2s ease;}
 
       .col:hover{
       -webkit-transform: scale(1.05);
