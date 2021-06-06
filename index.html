@@ -10,8 +10,66 @@
 
     <title>Home | Click</title>
     <style>
+    a:hover{ 
+    color:orange;
+    background-color:#fc8500;
+    }
+      .card-header{ 
+
+background: rgb(252,133,0);
+background: linear-gradient(266deg, rgba(252,133,0,1) 15%, rgba(204,204,204,1) 100%);}
+      .card-body{
+      background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+           .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+.logo-image:hover{
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.55);
+      transition: 0.2s ease;
+      }
+      
+ .bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
       .col{
       transition: 0.2s ease;
+        background: #00C9FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }
 
       .col:hover{
@@ -25,6 +83,9 @@
 
 <body style="background-color:#f7f7f7">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class= "logo-image">
+<img src="/memories/Click Logo.png" class="img-fluid">
+</div>
   <div class="container-fluid">
     <a class="navbar-brand" href="/birthday-wish/">Click Club Memories</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,6 +113,9 @@
   </div>
 </nav>
 <br><h4 class="text-center">Here are some memories</h4><br>
+  <div class= bg></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
 <div class="container">
   <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
     <div class="col">
